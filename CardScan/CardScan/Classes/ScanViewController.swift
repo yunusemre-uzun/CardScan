@@ -115,7 +115,7 @@ import Vision
             return nil
         }
         
-        let bundleUrl = Bundle(for: ScanViewController.self).url(forResource: "mPayResources.bundle/CardScan", withExtension: "bundle")!
+        let bundleUrl = Bundle(for: ScanViewController.self).url(forResource: "CardScan", withExtension: "bundle")!
         let bundle = Bundle(url: bundleUrl)!
         
         let storyboard = UIStoryboard(name: "CardScan", bundle: bundle)
@@ -174,7 +174,7 @@ import Vision
     }
     
     @objc static public func cameraImage() -> UIImage? {
-        let bundleUrl = Bundle(for: ScanViewController.self).url(forResource: "mPayResources.bundle/CardScan", withExtension: "bundle")!
+        let bundleUrl = Bundle(for: ScanViewController.self).url(forResource: "CardScan", withExtension: "bundle")!
         let bundle = Bundle(url: bundleUrl)!
         
         return UIImage(named: "camera", in: bundle, compatibleWith: nil)

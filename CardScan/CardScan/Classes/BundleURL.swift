@@ -12,7 +12,7 @@ struct BundleURL{
         let modelcFile = documentDirectory.appendingPathComponent(modelName)
         
         if !FileManager.default.fileExists(atPath: modelcFile.path) {
-            guard let bundleUrl = Bundle(for: FindFour.self).url(forResource: "mPayResources.bundle/CardScan", withExtension: "bundle") else {
+            guard let bundleUrl = Bundle(for: FindFour.self).url(forResource: "CardScan", withExtension: "bundle") else {
                 print("bundleURL could not be found")
                 return nil
             }
