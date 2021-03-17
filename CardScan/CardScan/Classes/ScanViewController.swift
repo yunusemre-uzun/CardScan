@@ -267,6 +267,9 @@ import Vision
         
         self.scanCardLabel.text = dataSource.scanCard()
         self.positionCardLabel.text = dataSource.positionCard()
+        let skipButtonText = NSAttributedString(string: dataSource.skipButton(),
+                                                attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue,
+                                                             .underlineColor: UIColor.white])
         self.skipButton.setTitle(dataSource.skipButton(), for: .normal)
         self.backButton.setTitle(dataSource.backButton(), for: .normal)
     }
