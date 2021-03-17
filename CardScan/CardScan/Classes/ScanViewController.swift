@@ -270,7 +270,7 @@ import Vision
         let skipButtonText = NSAttributedString(string: dataSource.skipButton(),
                                                 attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue,
                                                              .underlineColor: UIColor.white])
-        self.skipButton.setTitle(dataSource.skipButton(), for: .normal)
+        self.skipButton.setTitle(skipButtonText, for: .normal)
         self.backButton.setTitle(dataSource.backButton(), for: .normal)
     }
     
